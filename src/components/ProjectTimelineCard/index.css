@@ -1,0 +1,96 @@
+/* ProjectTimelineCard.css */
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #ffffff; /* Background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  margin: 16px auto; /* Centering the cards */
+  transition: transform 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-card-container:hover {
+  transform: scale(1.05);
+}
+
+.project-card-image-style {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-title-and-duration-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.projectTitle-heading {
+  font-size: 1.2rem;
+  color: #171f46; /* Dark blue for the title */
+  margin: 0;
+}
+
+.duration-container {
+  display: flex;
+  align-items: center;
+  color: #1e293b; /* Slightly darker shade */
+  font-size: 0.9rem;
+}
+
+.duration-container p {
+  margin-left: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.description-style {
+  font-size: 1rem;
+  color: #1e293b; /* Darker shade for description */
+  margin-bottom: 16px;
+}
+
+.link-style {
+  color: #0967d2; /* Bright blue for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-style:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .project-title-and-duration-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .duration-container {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project-card-container {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .projectTitle-heading {
+    font-size: 1rem;
+  }
+
+  .duration-container p {
+    font-size: 0.8rem;
+  }
+
+  .description-style {
+    font-size: 0.9rem;
+  }
+}

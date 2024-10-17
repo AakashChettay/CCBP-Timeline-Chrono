@@ -1,0 +1,121 @@
+/* CourseTimelineCard.css */
+.course-card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* Card background */
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 16px auto; /* Centering the cards */
+}
+
+.course-title-and-duration-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.courseTitle-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #171f46; /* Main title color */
+  margin: 0;
+}
+
+.duration-container {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #1e293b; /* Secondary text color */
+}
+
+.duration-container .duration-para {
+  margin-left: 4px;
+}
+
+.description-style {
+  font-size: 1rem;
+  color: #1e293b; /* Secondary text color */
+  margin-bottom: 12px;
+}
+
+/* Updated tags list styling */
+.tagslist-style {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Flexbox for tag items */
+  flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.taglist-item {
+  background-color: #f1f1f1; /* Tag background color */
+  color: #2b237c; /* Tag text color */
+  padding: 4px 8px; /* Padding around tags */
+  border-radius: 4px; /* Rounded corners */
+  margin: 4px; /* Space between tags */
+  font-size: 0.875rem; /* Font size for tags */
+  display: flex; /* Flexbox to center text */
+  align-items: center; /* Centering text vertically */
+}
+
+.taglist-item p {
+  margin: 0; /* Reset margin for paragraph inside tag */
+}
+
+/* Adding hover effects for interactive elements */
+.taglist-item:hover {
+  background-color: #0967d2; /* Interactive element hover color */
+  color: #ffffff; /* Invert text color on hover */
+}
+
+/* Responsive styles for small (sm) and extra small (xs) devices */
+@media (max-width: 768px) {
+  .course-title-and-duration-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .duration-container {
+    margin-top: 8px;
+  }
+
+  .courseTitle-heading {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-card-container {
+    padding: 12px;
+  }
+
+  .courseTitle-heading {
+    font-size: 1.2rem;
+  }
+
+  .duration-container {
+    font-size: 0.875rem;
+  }
+
+  .description-style {
+    font-size: 0.875rem;
+  }
+
+  .taglist-item {
+    font-size: 0.75rem; /* Smaller font size for tags on smaller screens */
+  }
+}
+/* Assuming you have a class for the date element, e.g., .date-style */
+.date-style {
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.date-style:hover {
+  background-color: transparent; /* Remove the highlight on hover */
+}
